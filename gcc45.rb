@@ -22,12 +22,12 @@ class Gcc45 < Formula
   homepage "https://gcc.gnu.org"
   url "http://ftpmirror.gnu.org/gcc/gcc-4.5.4/gcc-4.5.4.tar.bz2"
   mirror "https://ftp.gnu.org/gnu/gcc/gcc-4.5.4/gcc-4.5.4.tar.bz2"
-  sha1 "cb692e6ddd1ca41f654e2ff24b1b57f09f40e211"
+  sha256 "cb692e6ddd1ca41f654e2ff24b1b57f09f40e211"
 
   bottle do
-    sha1 "1e2e710d2d20b6ba378b7b4e3d211fb482e73ff7" => :yosemite
-    sha1 "16a25ceb27a579ac02209a8056a13de268a63e40" => :mavericks
-    sha1 "fe4459e2e4874d4f4be687acef73fa92dd2eb821" => :mountain_lion
+    sha256 "1e2e710d2d20b6ba378b7b4e3d211fb482e73ff7" => :yosemite
+    sha256 "16a25ceb27a579ac02209a8056a13de268a63e40" => :mavericks
+    sha256 "fe4459e2e4874d4f4be687acef73fa92dd2eb821" => :mountain_lion
   end
 
   option "with-fortran", "Build the gfortran compiler"
@@ -58,13 +58,13 @@ class Gcc45 < Formula
   # Fix libffi for ppc, from MacPorts
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc45/files/ppc_fde_encoding.diff"
-    sha1 "49e335d085567467155ea6512ffa959a18eab0ef"
+    sha256 "49e335d085567467155ea6512ffa959a18eab0ef"
   end
 
   # Handle OS X deployment targets correctly (GCC PR target/63810 <https://gcc.gnu.org/bugzilla/show_bug.cgi?id=63810>).
   patch :p0 do
     url "https://trac.macports.org/export/129382/trunk/dports/lang/gcc45/files/macosx-version-min.patch"
-    sha1 "79a3314759a33059cd6e3a078fdb3f5ee957d2e6"
+    sha256 "79a3314759a33059cd6e3a078fdb3f5ee957d2e6"
   end
 
   fails_with :llvm

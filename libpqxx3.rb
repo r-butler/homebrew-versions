@@ -1,13 +1,13 @@
 class Libpqxx3 < Formula
   homepage "http://pqxx.org/development/libpqxx/"
   url "http://pqxx.org/download/software/libpqxx/libpqxx-3.1.1.tar.gz"
-  sha1 "b8942164495310894cab39e5882c42f092570fc5"
+  sha256 "b8942164495310894cab39e5882c42f092570fc5"
 
   bottle do
     cellar :any
-    sha1 "4b252768206da1560e33af4baefb689f475556a8" => :yosemite
-    sha1 "4b9dbfb332c12c1b8b8b16fff11a66d2b5ad9621" => :mavericks
-    sha1 "e968d6871cc9e35c709d15eaa6c8704fe84c6a12" => :mountain_lion
+    sha256 "4b252768206da1560e33af4baefb689f475556a8" => :yosemite
+    sha256 "4b9dbfb332c12c1b8b8b16fff11a66d2b5ad9621" => :mavericks
+    sha256 "e968d6871cc9e35c709d15eaa6c8704fe84c6a12" => :mountain_lion
   end
 
   depends_on "pkg-config" => :build

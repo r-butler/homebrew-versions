@@ -3,7 +3,7 @@ require 'formula'
 class Postgis15 < Formula
   homepage 'http://postgis.refractions.net'
   url 'http://download.osgeo.org/postgis/source/postgis-1.5.8.tar.gz'
-  sha1 'a3637851ba9dd4f29576c9dc60254e9f53abc559'
+  sha256 'a3637851ba9dd4f29576c9dc60254e9f53abc559'
 
   keg_only "Conflicts with postgis in main repository."
 

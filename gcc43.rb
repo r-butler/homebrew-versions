@@ -22,11 +22,11 @@ class Gcc43 < Formula
   homepage "https://gcc.gnu.org"
   url "http://ftpmirror.gnu.org/gcc/gcc-4.3.6/gcc-4.3.6.tar.bz2"
   mirror "https://ftp.gnu.org/gnu/gcc/gcc-4.3.6/gcc-4.3.6.tar.bz2"
-  sha1 "df276018e3c664c7e6aa7ca88a180515eea61663"
+  sha256 "df276018e3c664c7e6aa7ca88a180515eea61663"
 
   bottle do
-    sha1 "1b7ce5eff2095a1666acc03479343abe1b532eba" => :mavericks
-    sha1 "f926dc13742e51eb89308feddbc97aaa048d3d51" => :mountain_lion
+    sha256 "1b7ce5eff2095a1666acc03479343abe1b532eba" => :mavericks
+    sha256 "f926dc13742e51eb89308feddbc97aaa048d3d51" => :mountain_lion
   end
 
   option "with-fortran", "Build the gfortran compiler"
@@ -49,25 +49,25 @@ class Gcc43 < Formula
   # Fix building on darwin10
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc43/files/darwin10.diff"
-    sha1 "4119006a1fa18086431d3204db440750af668783"
+    sha256 "4119006a1fa18086431d3204db440750af668783"
   end
 
   # Fix multilib
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc43/files/i386_multilib.diff"
-    sha1 "040520aa92bc25c99f2daf85d81c10118363c8dd"
+    sha256 "040520aa92bc25c99f2daf85d81c10118363c8dd"
   end
 
   # Build fix for Snow Leopard
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc43/files/Make-lang.in.diff"
-    sha1 "d2420ea96789dcf8c3a6899dd3ad2a75876fd8e0"
+    sha256 "d2420ea96789dcf8c3a6899dd3ad2a75876fd8e0"
   end
 
   # Fix libffi fix for ppc
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc43/files/ppc_fde_encoding.diff"
-    sha1 "49e335d085567467155ea6512ffa959a18eab0ef"
+    sha256 "49e335d085567467155ea6512ffa959a18eab0ef"
   end
 
   fails_with :llvm

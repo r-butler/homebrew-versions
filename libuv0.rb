@@ -1,14 +1,14 @@
 class Libuv0 < Formula
   homepage "https://github.com/libuv/libuv"
   url "https://github.com/libuv/libuv/archive/v0.10.36.tar.gz"
-  sha1 "0991836d1dbf9419f448bc3459559181505e29c5"
+  sha256 "0991836d1dbf9419f448bc3459559181505e29c5"
   head "https://github.com/libuv/libuv.git", :branch => "v0.10"
 
   bottle do
     cellar :any
-    sha1 "49427a8c4ba598d11867e33ff05f304f61cceab8" => :yosemite
-    sha1 "eb147122bbabb9e35df0a77f795dd9899ba5320c" => :mavericks
-    sha1 "e47ad07dda7d4e2c33212ae2c458192263919365" => :mountain_lion
+    sha256 "49427a8c4ba598d11867e33ff05f304f61cceab8" => :yosemite
+    sha256 "eb147122bbabb9e35df0a77f795dd9899ba5320c" => :mavericks
+    sha256 "e47ad07dda7d4e2c33212ae2c458192263919365" => :mountain_lion
   end
 
   conflicts_with "libuv"

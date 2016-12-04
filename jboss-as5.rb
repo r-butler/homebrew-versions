@@ -3,7 +3,7 @@ require "formula"
 class JbossAs5 < Formula
   homepage "http://www.jboss.org/jbossas"
   url "https://downloads.sf.net/project/jboss/JBoss/JBoss-5.1.0.GA/jboss-5.1.0.GA.zip"
-  sha1 "be05d9e4774c60cc7473e2fdd0b1fff228ef7b38"
+  sha256 "be05d9e4774c60cc7473e2fdd0b1fff228ef7b38"
   version "5.1.0GA"
 
   def install

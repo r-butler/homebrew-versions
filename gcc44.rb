@@ -22,11 +22,11 @@ class Gcc44 < Formula
   homepage "https://gcc.gnu.org"
   url "http://ftpmirror.gnu.org/gcc/gcc-4.4.7/gcc-4.4.7.tar.bz2"
   mirror "https://ftp.gnu.org/gnu/gcc/gcc-4.4.7/gcc-4.4.7.tar.bz2"
-  sha1 "a6c834b0c2f58583da1d093de7a81a20ede9af75"
+  sha256 "a6c834b0c2f58583da1d093de7a81a20ede9af75"
 
   bottle do
-    sha1 "4b45d8a3814a3a4d9c32701f532b3a943d43203a" => :mavericks
-    sha1 "11c4280c78346bbab3dfaef302d5a93188a28b33" => :mountain_lion
+    sha256 "4b45d8a3814a3a4d9c32701f532b3a943d43203a" => :mavericks
+    sha256 "11c4280c78346bbab3dfaef302d5a93188a28b33" => :mountain_lion
   end
 
   option "with-fortran", "Build the gfortran compiler"
@@ -51,7 +51,7 @@ class Gcc44 < Formula
   # Fix libffi for ppc, from MacPorts
   patch :p0 do
     url "https://trac.macports.org/export/110576/trunk/dports/lang/gcc44/files/ppc_fde_encoding.diff"
-    sha1 "49e335d085567467155ea6512ffa959a18eab0ef"
+    sha256 "49e335d085567467155ea6512ffa959a18eab0ef"
   end
 
   fails_with :llvm

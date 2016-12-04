@@ -3,39 +3,39 @@ class Llvm34 < Formula
 
   stable do
     url 'http://llvm.org/releases/3.4.2/llvm-3.4.2.src.tar.gz'
-    sha1 'c5287384d0b95ecb0fd7f024be2cdfb60cd94bc9'
+    sha256 'c5287384d0b95ecb0fd7f024be2cdfb60cd94bc9'
 
     resource 'clang' do
       url 'http://llvm.org/releases/3.4.2/cfe-3.4.2.src.tar.gz'
-      sha1 'add5420b10c3c3a38c4dc2322f8b64ba0a5def97'
+      sha256 'add5420b10c3c3a38c4dc2322f8b64ba0a5def97'
     end
 
     resource 'clang-tools-extra' do
       url 'http://llvm.org/releases/3.4/clang-tools-extra-3.4.src.tar.gz'
-      sha1 '56afa36c2ddd11a53f1e199152b04dfb9347d93a'
+      sha256 '56afa36c2ddd11a53f1e199152b04dfb9347d93a'
     end
 
     resource 'compiler-rt' do
       url 'http://llvm.org/releases/3.4/compiler-rt-3.4.src.tar.gz'
-      sha1 'd644b1e4f306f7ad35df0a134d14a1123cd9f082'
+      sha256 'd644b1e4f306f7ad35df0a134d14a1123cd9f082'
     end
 
     resource 'polly' do
       url 'http://llvm.org/releases/3.4/polly-3.4.src.tar.gz'
-      sha1 '90891113f687018e6d0c0ad484afc3b221b89a8f'
+      sha256 '90891113f687018e6d0c0ad484afc3b221b89a8f'
     end
 
     resource 'libcxx' do
       url 'http://llvm.org/releases/3.4.2/libcxx-3.4.2.src.tar.gz'
-      sha1 '7daa55bd1e9d87c3657d08d14d6f83566e6a1c04'
+      sha256 '7daa55bd1e9d87c3657d08d14d6f83566e6a1c04'
     end
   end
 
   bottle do
     revision 1
-    sha1 "997027d21b72c66a01e163b7d5f9b5aeabd75f53" => :yosemite
-    sha1 "57d9f470f78f2f6a4f6258a228f54c1dbadd11ca" => :mavericks
-    sha1 "298ea580b502a9464bf106f3a6e935e8eb1a4c6d" => :mountain_lion
+    sha256 "997027d21b72c66a01e163b7d5f9b5aeabd75f53" => :yosemite
+    sha256 "57d9f470f78f2f6a4f6258a228f54c1dbadd11ca" => :mavericks
+    sha256 "298ea580b502a9464bf106f3a6e935e8eb1a4c6d" => :mountain_lion
   end
 
   head do

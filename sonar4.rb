@@ -1,12 +1,12 @@
 class Sonar4 < Formula
   homepage "http://www.sonarqube.org/"
   url "http://dist.sonar.codehaus.org/sonarqube-4.5.4.zip"
-  sha1 "755d93b58d8fe88f4e7e99eb11930254128bc5c1"
+  sha256 "755d93b58d8fe88f4e7e99eb11930254128bc5c1"
 
   bottle do
-    sha1 "e2107c08b2317a7bb0623c2362e09e1e67e42501" => :yosemite
-    sha1 "9b645db49f27913c9edd85e1772e9fab85210986" => :mavericks
-    sha1 "b1072a188f79703046a120ae35bc0534c5b9f2c6" => :mountain_lion
+    sha256 "e2107c08b2317a7bb0623c2362e09e1e67e42501" => :yosemite
+    sha256 "9b645db49f27913c9edd85e1772e9fab85210986" => :mavericks
+    sha256 "b1072a188f79703046a120ae35bc0534c5b9f2c6" => :mountain_lion
   end
 
   def install

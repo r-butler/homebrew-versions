@@ -6,9 +6,9 @@ class Docker133 < Formula
 
   bottle do
     cellar :any
-    sha1 "efa8a6c570d0aa167dc13451636e569378b4e13a" => :yosemite
-    sha1 "339d5b573e10c456228fe0f224af63b84c8c6f91" => :mavericks
-    sha1 "f60f9d8815545837169eebafdf328d914f9b6156" => :mountain_lion
+    sha256 "efa8a6c570d0aa167dc13451636e569378b4e13a" => :yosemite
+    sha256 "339d5b573e10c456228fe0f224af63b84c8c6f91" => :mavericks
+    sha256 "f60f9d8815545837169eebafdf328d914f9b6156" => :mountain_lion
   end
 
   option "without-completions", "Disable bash/zsh completions"

@@ -5,17 +5,17 @@ class Gmp4 < Formula
   mirror 'https://ftp.gnu.org/gnu/gmp/gmp-4.3.2.tar.bz2'
   mirror 'ftp://ftp.gmplib.org/pub/gmp-4.3.2/gmp-4.3.2.tar.bz2'
   mirror 'ftp://gcc.gnu.org/pub/gcc/infrastructure/gmp-4.3.2.tar.bz2'
-  sha1 'c011e8feaf1bb89158bd55eaabd7ef8fdd101a2c'
+  sha256 'c011e8feaf1bb89158bd55eaabd7ef8fdd101a2c'
 
   bottle do
     cellar :any
     sha256 "40de88cbcd04d6869051eb8617afbb2e0754f680f6754708652a807349948815" => :yosemite
     sha256 "7543fa0986dfa81487367b410c178ca581560df39ca53dfc7d66e2c2a4543813" => :mavericks
     sha256 "6064daffafdeeab54380827aa6da948a47001ef847a28c2edbb0688f54e0a480" => :mountain_lion
-    sha1 'ac18cca84840aac6d004d829bc1cea398ec09487' => :tiger_g3
-    sha1 '33780b658a5f64d220fb64c07d4f6e859ddd94c5' => :tiger_altivec
-    sha1 '71bf67992e28a0b48606db40df70f22d3414c5fd' => :leopard_g3
-    sha1 '480b7c3848b069e0da3bb33331beacf9122baec3' => :leopard_altivec
+    sha256 'ac18cca84840aac6d004d829bc1cea398ec09487' => :tiger_g3
+    sha256 '33780b658a5f64d220fb64c07d4f6e859ddd94c5' => :tiger_altivec
+    sha256 '71bf67992e28a0b48606db40df70f22d3414c5fd' => :leopard_g3
+    sha256 '480b7c3848b069e0da3bb33331beacf9122baec3' => :leopard_altivec
   end
 
   keg_only "Conflicts with gmp in main repository."

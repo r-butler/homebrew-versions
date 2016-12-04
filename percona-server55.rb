@@ -2,12 +2,12 @@ class PerconaServer55 < Formula
   homepage "http://www.percona.com"
   url "http://www.percona.com/downloads/Percona-Server-5.5/Percona-Server-5.5.41-37.0/source/tarball/percona-server-5.5.41-37.0.tar.gz"
   version "5.5.41-37.0"
-  sha1 "74610892ba6402e8df04320db444d6dcc7cb2fe8"
+  sha256 "74610892ba6402e8df04320db444d6dcc7cb2fe8"
 
   bottle do
-    sha1 "4c765fa7e77cea212481b9916c140ae7eb7dac9f" => :yosemite
-    sha1 "c03ce1fad24f4aa7574c291ddf28e86695d8c0d5" => :mavericks
-    sha1 "1d2f86b8c062a965a28e246f9d0957855c20b883" => :mountain_lion
+    sha256 "4c765fa7e77cea212481b9916c140ae7eb7dac9f" => :yosemite
+    sha256 "c03ce1fad24f4aa7574c291ddf28e86695d8c0d5" => :mavericks
+    sha256 "1d2f86b8c062a965a28e246f9d0957855c20b883" => :mountain_lion
   end
 
   depends_on "cmake" => :build

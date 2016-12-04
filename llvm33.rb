@@ -4,39 +4,39 @@ class Llvm33 < Formula
 
   stable do
     url 'http://llvm.org/releases/3.3/llvm-3.3.src.tar.gz'
-    sha1 'c6c22d5593419e3cb47cbcf16d967640e5cce133'
+    sha256 'c6c22d5593419e3cb47cbcf16d967640e5cce133'
 
     resource 'clang' do
       url 'http://llvm.org/releases/3.3/cfe-3.3.src.tar.gz'
-      sha1 'ccd6dbf2cdb1189a028b70bcb8a22509c25c74c8'
+      sha256 'ccd6dbf2cdb1189a028b70bcb8a22509c25c74c8'
     end
 
     resource 'clang-tools-extra' do
       url 'http://llvm.org/releases/3.3/clang-tools-extra-3.3.src.tar.gz'
-      sha1 '6f7af9ba8014f7e286a02e4ae2e3f2017b8bfac2'
+      sha256 '6f7af9ba8014f7e286a02e4ae2e3f2017b8bfac2'
     end
 
     resource 'compiler-rt' do
       url 'http://llvm.org/releases/3.3/compiler-rt-3.3.src.tar.gz'
-      sha1 '745386ec046e3e49742e1ecb6912c560ccd0a002'
+      sha256 '745386ec046e3e49742e1ecb6912c560ccd0a002'
     end
 
     resource 'polly' do
       url 'http://llvm.org/releases/3.3/polly-3.3.src.tar.gz'
-      sha1 'eb75f5674fedf77425d16c9c0caec04961f03e04'
+      sha256 'eb75f5674fedf77425d16c9c0caec04961f03e04'
     end
 
     resource 'libcxx' do
       url 'http://llvm.org/releases/3.3/libcxx-3.3.src.tar.gz'
-      sha1 '7bea00bc1031bf3bf6c248e57c1f4e0874c18c04'
+      sha256 '7bea00bc1031bf3bf6c248e57c1f4e0874c18c04'
     end
   end
 
   bottle do
     revision 1
-    sha1 "4a3c9ec6d02d95dffa1a045d0819a0d7926c4890" => :yosemite
-    sha1 "21e88b1a11acd209be8fd26238312b727e69e061" => :mavericks
-    sha1 "7c6d6545a0e634edc1650d259d4f44f25bdb157c" => :mountain_lion
+    sha256 "4a3c9ec6d02d95dffa1a045d0819a0d7926c4890" => :yosemite
+    sha256 "21e88b1a11acd209be8fd26238312b727e69e061" => :mavericks
+    sha256 "7c6d6545a0e634edc1650d259d4f44f25bdb157c" => :mountain_lion
   end
 
   head do
@@ -71,7 +71,7 @@ class Llvm33 < Formula
 
     resource 'clang-unwind-patch' do
       url 'http://llvm.org/viewvc/llvm-project/cfe/trunk/lib/Headers/unwind.h?r1=172666&r2=189535&view=patch', :using => :nounzip
-      sha1 'b40f6dba4928add36945c50e5b89ca0988147cd2'
+      sha256 'b40f6dba4928add36945c50e5b89ca0988147cd2'
     end
   end
 

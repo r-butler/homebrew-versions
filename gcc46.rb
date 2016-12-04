@@ -22,12 +22,12 @@ class Gcc46 < Formula
   homepage "https://gcc.gnu.org"
   url "http://ftpmirror.gnu.org/gcc/gcc-4.6.4/gcc-4.6.4.tar.bz2"
   mirror "https://ftp.gnu.org/gnu/gcc/gcc-4.6.4/gcc-4.6.4.tar.bz2"
-  sha1 "63933a8a5cf725626585dbba993c8b0f6db1335d"
+  sha256 "63933a8a5cf725626585dbba993c8b0f6db1335d"
 
   bottle do
-    sha1 "9dcb96abaa4f6c58a7d989147f4c3fade49fdfc3" => :yosemite
-    sha1 "7a695d2c558a761b5f6c6166197eb37546bfb846" => :mavericks
-    sha1 "16fae71675757818526e7e73007fe5b8d8e99c7d" => :mountain_lion
+    sha256 "9dcb96abaa4f6c58a7d989147f4c3fade49fdfc3" => :yosemite
+    sha256 "7a695d2c558a761b5f6c6166197eb37546bfb846" => :mavericks
+    sha256 "16fae71675757818526e7e73007fe5b8d8e99c7d" => :mountain_lion
   end
 
   if MacOS.version >= :el_capitan
@@ -75,7 +75,7 @@ class Gcc46 < Formula
   # Fix 10.10 issues: https://gcc.gnu.org/viewcvs/gcc?view=revision&revision=215251
   patch :p0 do
     url "https://trac.macports.org/export/126996/trunk/dports/lang/gcc48/files/patch-10.10.diff"
-    sha1 "4fb0ededa7b8105c3bdffa15469b589b272b7788"
+    sha256 "4fb0ededa7b8105c3bdffa15469b589b272b7788"
   end
 
   def install

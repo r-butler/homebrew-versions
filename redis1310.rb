@@ -3,7 +3,7 @@ require 'formula'
 class Redis1310 < Formula
   homepage 'http://redis.io/'
   url 'https://github.com/antirez/redis/archive/v1.3.10.tar.gz'
-  sha1 '5fff0785362faa3e21691a442d262734abc85c3f'
+  sha256 '5fff0785362faa3e21691a442d262734abc85c3f'
 
   fails_with :llvm do
     build 2334

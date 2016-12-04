@@ -4,9 +4,9 @@ class Ansible14 < Formula
   sha256 "61c35aad0d4ef668051652b8a5b84b6407016a5b1daa74b982889ff0fafddea0"
 
   bottle do
-    sha1 "c7098fe56be7afc0c789337aeb209a9821ae3035" => :yosemite
-    sha1 "f6d35bc75e6642567c2430f6c989fe5c4991ccb7" => :mavericks
-    sha1 "e060a56c76c91cc0c7d524bcd2b3fb9774d183c5" => :mountain_lion
+    sha256 "c7098fe56be7afc0c789337aeb209a9821ae3035" => :yosemite
+    sha256 "f6d35bc75e6642567c2430f6c989fe5c4991ccb7" => :mavericks
+    sha256 "e060a56c76c91cc0c7d524bcd2b3fb9774d183c5" => :mountain_lion
   end
 
   depends_on :python

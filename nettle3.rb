@@ -28,6 +28,6 @@ class Nettle3 < Formula
     (testpath/"testfile.txt").write("This is a test file")
     expected = /91b7b0b1e27bfbf7 bc646946f35fa972 c47c2d32/
 
-    assert_match expected, shell_output("#{bin}/nettle-hash --a sha1 testfile.txt")
+    assert_match expected, shell_output("#{bin}/nettle-hash --a sha256 testfile.txt")
   end
 end

@@ -5,9 +5,9 @@ class Phantomjs198 < Formula
 
   bottle do
     cellar :any
-    sha1 "ad447564de81f1499795a6c8e2dd7b5db474f2dc" => :yosemite
-    sha1 "ec47fc927a5ed38bb2c5802f661c635f6c15324d" => :mavericks
-    sha1 "54348237528d076e12ffcc7ffb286fb0b5e02b61" => :mountain_lion
+    sha256 "ad447564de81f1499795a6c8e2dd7b5db474f2dc" => :yosemite
+    sha256 "ec47fc927a5ed38bb2c5802f661c635f6c15324d" => :mavericks
+    sha256 "54348237528d076e12ffcc7ffb286fb0b5e02b61" => :mountain_lion
   end
 
   depends_on "openssl"
